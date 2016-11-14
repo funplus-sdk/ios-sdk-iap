@@ -10,10 +10,9 @@
 		D72CC8581D194F5E00608E54 /* FunPlusAppleIAP.h in Headers */ = {isa = PBXBuildFile; fileRef = D72CC8571D194F5E00608E54 /* FunPlusAppleIAP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D72CC85F1D194F5E00608E54 /* FunPlusAppleIAP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72CC8541D194F5E00608E54 /* FunPlusAppleIAP.framework */; };
 		D72CC8641D194F5E00608E54 /* FunPlusAppleIAPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72CC8631D194F5E00608E54 /* FunPlusAppleIAPTests.swift */; };
-		D72CC87B1D19551200608E54 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72CC87A1D19551200608E54 /* Alamofire.framework */; };
-		D72CC87F1D19594900608E54 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72CC87E1D19594900608E54 /* StoreKit.framework */; };
 		D7376DFA1D24EE1C00805DAE /* TransactionFinishRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7376DF91D24EE1C00805DAE /* TransactionFinishRequest.swift */; };
 		D7376DFC1D2509EB00805DAE /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7376DFB1D2509EB00805DAE /* Notifications.swift */; };
+		D776F02D1DD9689A0032D813 /* FunPlusSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D776F02C1DD9689A0032D813 /* FunPlusSDK.framework */; };
 		D79693901D21178200B29B08 /* FunPlusAppleIAP.swift in Sources */ = {isa = PBXBuildFile; fileRef = D796938F1D21178200B29B08 /* FunPlusAppleIAP.swift */; };
 		D79693921D2119AE00B29B08 /* ProductQueryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79693911D2119AE00B29B08 /* ProductQueryRequest.swift */; };
 		D796939A1D211E3B00B29B08 /* PaymentQueueProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79693991D211E3B00B29B08 /* PaymentQueueProxy.swift */; };
@@ -41,13 +40,12 @@
 		D72CC85E1D194F5E00608E54 /* FunPlusAppleIAPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunPlusAppleIAPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D72CC8631D194F5E00608E54 /* FunPlusAppleIAPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunPlusAppleIAPTests.swift; sourceTree = "<group>"; };
 		D72CC8651D194F5E00608E54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D72CC87A1D19551200608E54 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../../../../../Library/Developer/Xcode/DerivedData/FunPlusSDK-boopautgmrhwhcdwolqcmyosiphf/Build/Products/Debug-iphonesimulator/Alamofire.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D72CC87E1D19594900608E54 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D7376DF91D24EE1C00805DAE /* TransactionFinishRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionFinishRequest.swift; sourceTree = "<group>"; };
 		D7376DFB1D2509EB00805DAE /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		D75A4E161DC2F51A008141A5 /* FunPlusSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FunPlusSDK.framework; path = "../FunPlusSDK/Build/Products/Debug-iphonesimulator/FunPlusSDK.framework"; sourceTree = "<group>"; };
 		D75A4E181DC2F529008141A5 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = "../FunPlusSDK/Build/Products/Debug-iphonesimulator/CryptoSwift.framework"; sourceTree = "<group>"; };
 		D75A4E1A1DC2F52E008141A5 /* AdjustSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdjustSdk.framework; path = "../FunPlusSDK/Build/Products/Debug-iphonesimulator/AdjustSdk.framework"; sourceTree = "<group>"; };
+		D776F02C1DD9689A0032D813 /* FunPlusSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FunPlusSDK.framework; sourceTree = "<group>"; };
 		D796938F1D21178200B29B08 /* FunPlusAppleIAP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunPlusAppleIAP.swift; sourceTree = "<group>"; };
 		D79693911D2119AE00B29B08 /* ProductQueryRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductQueryRequest.swift; sourceTree = "<group>"; };
 		D79693991D211E3B00B29B08 /* PaymentQueueProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentQueueProxy.swift; sourceTree = "<group>"; };
@@ -63,8 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D72CC87F1D19594900608E54 /* StoreKit.framework in Frameworks */,
-				D72CC87B1D19551200608E54 /* Alamofire.framework in Frameworks */,
+				D776F02D1DD9689A0032D813 /* FunPlusSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,8 +79,7 @@
 		D72CC84A1D194F5E00608E54 = {
 			isa = PBXGroup;
 			children = (
-				D72CC87E1D19594900608E54 /* StoreKit.framework */,
-				D72CC87A1D19551200608E54 /* Alamofire.framework */,
+				D776F02C1DD9689A0032D813 /* FunPlusSDK.framework */,
 				D72CC8561D194F5E00608E54 /* FunPlusAppleIAP */,
 				D72CC8621D194F5E00608E54 /* FunPlusAppleIAPTests */,
 				D72CC8551D194F5E00608E54 /* Products */,
@@ -385,6 +381,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FunPlusAppleIAP/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -406,6 +406,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FunPlusAppleIAP/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
