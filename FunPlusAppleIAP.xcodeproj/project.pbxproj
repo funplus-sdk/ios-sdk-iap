@@ -12,7 +12,6 @@
 		D72CC8641D194F5E00608E54 /* FunPlusAppleIAPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72CC8631D194F5E00608E54 /* FunPlusAppleIAPTests.swift */; };
 		D7376DFA1D24EE1C00805DAE /* TransactionFinishRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7376DF91D24EE1C00805DAE /* TransactionFinishRequest.swift */; };
 		D7376DFC1D2509EB00805DAE /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7376DFB1D2509EB00805DAE /* Notifications.swift */; };
-		D776F02D1DD9689A0032D813 /* FunPlusSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D776F02C1DD9689A0032D813 /* FunPlusSDK.framework */; };
 		D79693901D21178200B29B08 /* FunPlusAppleIAP.swift in Sources */ = {isa = PBXBuildFile; fileRef = D796938F1D21178200B29B08 /* FunPlusAppleIAP.swift */; };
 		D79693921D2119AE00B29B08 /* ProductQueryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79693911D2119AE00B29B08 /* ProductQueryRequest.swift */; };
 		D796939A1D211E3B00B29B08 /* PaymentQueueProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79693991D211E3B00B29B08 /* PaymentQueueProxy.swift */; };
@@ -20,6 +19,23 @@
 		D796939E1D21382100B29B08 /* TransactionRestoreRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D796939D1D21382100B29B08 /* TransactionRestoreRequest.swift */; };
 		D79693A01D213A3A00B29B08 /* ReceiptManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D796939F1D213A3A00B29B08 /* ReceiptManager.swift */; };
 		D79693A21D213B7100B29B08 /* ReceiptRefreshRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79693A11D213B7100B29B08 /* ReceiptRefreshRequest.swift */; };
+		D7B9EB991DE2D82F00E679FA /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9EB881DE2D82F00E679FA /* AFError.swift */; };
+		D7B9EB9A1DE2D82F00E679FA /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9EB891DE2D82F00E679FA /* Alamofire.swift */; };
+		D7B9EB9B1DE2D82F00E679FA /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9EB8A1DE2D82F00E679FA /* DispatchQueue+Alamofire.swift */; };
+		D7B9EB9C1DE2D82F00E679FA /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9EB8B1DE2D82F00E679FA /* MultipartFormData.swift */; };
+		D7B9EB9D1DE2D82F00E679FA /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9EB8C1DE2D82F00E679FA /* NetworkReachabilityManager.swift */; };
+		D7B9EB9E1DE2D82F00E679FA /* RequestNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9EB8D1DE2D82F00E679FA /* RequestNotifications.swift */; };
+		D7B9EB9F1DE2D82F00E679FA /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9EB8E1DE2D82F00E679FA /* ParameterEncoding.swift */; };
+		D7B9EBA01DE2D82F00E679FA /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9EB8F1DE2D82F00E679FA /* Request.swift */; };
+		D7B9EBA11DE2D82F00E679FA /* RequestSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9EB901DE2D82F00E679FA /* RequestSessionManager.swift */; };
+		D7B9EBA21DE2D82F00E679FA /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9EB911DE2D82F00E679FA /* Response.swift */; };
+		D7B9EBA31DE2D82F00E679FA /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9EB921DE2D82F00E679FA /* ResponseSerialization.swift */; };
+		D7B9EBA41DE2D82F00E679FA /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9EB931DE2D82F00E679FA /* Result.swift */; };
+		D7B9EBA51DE2D82F00E679FA /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9EB941DE2D82F00E679FA /* ServerTrustPolicy.swift */; };
+		D7B9EBA61DE2D82F00E679FA /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9EB951DE2D82F00E679FA /* SessionDelegate.swift */; };
+		D7B9EBA71DE2D82F00E679FA /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9EB961DE2D82F00E679FA /* TaskDelegate.swift */; };
+		D7B9EBA81DE2D82F00E679FA /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9EB971DE2D82F00E679FA /* Timeline.swift */; };
+		D7B9EBA91DE2D82F00E679FA /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B9EB981DE2D82F00E679FA /* Validation.swift */; };
 		D7F18D4C1D1F80AD00EC709C /* ProductQueryRequestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F18D4B1D1F80AD00EC709C /* ProductQueryRequestsTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +61,6 @@
 		D75A4E161DC2F51A008141A5 /* FunPlusSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FunPlusSDK.framework; path = "../FunPlusSDK/Build/Products/Debug-iphonesimulator/FunPlusSDK.framework"; sourceTree = "<group>"; };
 		D75A4E181DC2F529008141A5 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = "../FunPlusSDK/Build/Products/Debug-iphonesimulator/CryptoSwift.framework"; sourceTree = "<group>"; };
 		D75A4E1A1DC2F52E008141A5 /* AdjustSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdjustSdk.framework; path = "../FunPlusSDK/Build/Products/Debug-iphonesimulator/AdjustSdk.framework"; sourceTree = "<group>"; };
-		D776F02C1DD9689A0032D813 /* FunPlusSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FunPlusSDK.framework; sourceTree = "<group>"; };
 		D796938F1D21178200B29B08 /* FunPlusAppleIAP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunPlusAppleIAP.swift; sourceTree = "<group>"; };
 		D79693911D2119AE00B29B08 /* ProductQueryRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductQueryRequest.swift; sourceTree = "<group>"; };
 		D79693991D211E3B00B29B08 /* PaymentQueueProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentQueueProxy.swift; sourceTree = "<group>"; };
@@ -53,6 +68,23 @@
 		D796939D1D21382100B29B08 /* TransactionRestoreRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionRestoreRequest.swift; sourceTree = "<group>"; };
 		D796939F1D213A3A00B29B08 /* ReceiptManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptManager.swift; sourceTree = "<group>"; };
 		D79693A11D213B7100B29B08 /* ReceiptRefreshRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptRefreshRequest.swift; sourceTree = "<group>"; };
+		D7B9EB881DE2D82F00E679FA /* AFError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = FunPlusAppleIAP/Alamofire/AFError.swift; sourceTree = "<group>"; };
+		D7B9EB891DE2D82F00E679FA /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = FunPlusAppleIAP/Alamofire/Alamofire.swift; sourceTree = "<group>"; };
+		D7B9EB8A1DE2D82F00E679FA /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "FunPlusAppleIAP/Alamofire/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		D7B9EB8B1DE2D82F00E679FA /* MultipartFormData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = FunPlusAppleIAP/Alamofire/MultipartFormData.swift; sourceTree = "<group>"; };
+		D7B9EB8C1DE2D82F00E679FA /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = FunPlusAppleIAP/Alamofire/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		D7B9EB8D1DE2D82F00E679FA /* RequestNotifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestNotifications.swift; path = FunPlusAppleIAP/Alamofire/RequestNotifications.swift; sourceTree = "<group>"; };
+		D7B9EB8E1DE2D82F00E679FA /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = FunPlusAppleIAP/Alamofire/ParameterEncoding.swift; sourceTree = "<group>"; };
+		D7B9EB8F1DE2D82F00E679FA /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Request.swift; path = FunPlusAppleIAP/Alamofire/Request.swift; sourceTree = "<group>"; };
+		D7B9EB901DE2D82F00E679FA /* RequestSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestSessionManager.swift; path = FunPlusAppleIAP/Alamofire/RequestSessionManager.swift; sourceTree = "<group>"; };
+		D7B9EB911DE2D82F00E679FA /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Response.swift; path = FunPlusAppleIAP/Alamofire/Response.swift; sourceTree = "<group>"; };
+		D7B9EB921DE2D82F00E679FA /* ResponseSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = FunPlusAppleIAP/Alamofire/ResponseSerialization.swift; sourceTree = "<group>"; };
+		D7B9EB931DE2D82F00E679FA /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Result.swift; path = FunPlusAppleIAP/Alamofire/Result.swift; sourceTree = "<group>"; };
+		D7B9EB941DE2D82F00E679FA /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = FunPlusAppleIAP/Alamofire/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		D7B9EB951DE2D82F00E679FA /* SessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = FunPlusAppleIAP/Alamofire/SessionDelegate.swift; sourceTree = "<group>"; };
+		D7B9EB961DE2D82F00E679FA /* TaskDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = FunPlusAppleIAP/Alamofire/TaskDelegate.swift; sourceTree = "<group>"; };
+		D7B9EB971DE2D82F00E679FA /* Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = FunPlusAppleIAP/Alamofire/Timeline.swift; sourceTree = "<group>"; };
+		D7B9EB981DE2D82F00E679FA /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = FunPlusAppleIAP/Alamofire/Validation.swift; sourceTree = "<group>"; };
 		D7F18D4B1D1F80AD00EC709C /* ProductQueryRequestsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductQueryRequestsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,7 +93,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D776F02D1DD9689A0032D813 /* FunPlusSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +110,6 @@
 		D72CC84A1D194F5E00608E54 = {
 			isa = PBXGroup;
 			children = (
-				D776F02C1DD9689A0032D813 /* FunPlusSDK.framework */,
 				D72CC8561D194F5E00608E54 /* FunPlusAppleIAP */,
 				D72CC8621D194F5E00608E54 /* FunPlusAppleIAPTests */,
 				D72CC8551D194F5E00608E54 /* Products */,
@@ -99,6 +129,7 @@
 		D72CC8561D194F5E00608E54 /* FunPlusAppleIAP */ = {
 			isa = PBXGroup;
 			children = (
+				D7B9EB871DE2D81A00E679FA /* Alamofire */,
 				D72CC8591D194F5E00608E54 /* Info.plist */,
 				D72CC8571D194F5E00608E54 /* FunPlusAppleIAP.h */,
 				D796938F1D21178200B29B08 /* FunPlusAppleIAP.swift */,
@@ -132,6 +163,31 @@
 				D75A4E161DC2F51A008141A5 /* FunPlusSDK.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7B9EB871DE2D81A00E679FA /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				D7B9EB881DE2D82F00E679FA /* AFError.swift */,
+				D7B9EB891DE2D82F00E679FA /* Alamofire.swift */,
+				D7B9EB8A1DE2D82F00E679FA /* DispatchQueue+Alamofire.swift */,
+				D7B9EB8B1DE2D82F00E679FA /* MultipartFormData.swift */,
+				D7B9EB8C1DE2D82F00E679FA /* NetworkReachabilityManager.swift */,
+				D7B9EB8D1DE2D82F00E679FA /* RequestNotifications.swift */,
+				D7B9EB8E1DE2D82F00E679FA /* ParameterEncoding.swift */,
+				D7B9EB8F1DE2D82F00E679FA /* Request.swift */,
+				D7B9EB901DE2D82F00E679FA /* RequestSessionManager.swift */,
+				D7B9EB911DE2D82F00E679FA /* Response.swift */,
+				D7B9EB921DE2D82F00E679FA /* ResponseSerialization.swift */,
+				D7B9EB931DE2D82F00E679FA /* Result.swift */,
+				D7B9EB941DE2D82F00E679FA /* ServerTrustPolicy.swift */,
+				D7B9EB951DE2D82F00E679FA /* SessionDelegate.swift */,
+				D7B9EB961DE2D82F00E679FA /* TaskDelegate.swift */,
+				D7B9EB971DE2D82F00E679FA /* Timeline.swift */,
+				D7B9EB981DE2D82F00E679FA /* Validation.swift */,
+			);
+			name = Alamofire;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,14 +300,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7B9EB9E1DE2D82F00E679FA /* RequestNotifications.swift in Sources */,
+				D7B9EB9D1DE2D82F00E679FA /* NetworkReachabilityManager.swift in Sources */,
+				D7B9EB9B1DE2D82F00E679FA /* DispatchQueue+Alamofire.swift in Sources */,
+				D7B9EBA31DE2D82F00E679FA /* ResponseSerialization.swift in Sources */,
+				D7B9EBA91DE2D82F00E679FA /* Validation.swift in Sources */,
 				D79693921D2119AE00B29B08 /* ProductQueryRequest.swift in Sources */,
+				D7B9EB9C1DE2D82F00E679FA /* MultipartFormData.swift in Sources */,
+				D7B9EBA21DE2D82F00E679FA /* Response.swift in Sources */,
 				D7376DFA1D24EE1C00805DAE /* TransactionFinishRequest.swift in Sources */,
+				D7B9EBA81DE2D82F00E679FA /* Timeline.swift in Sources */,
 				D79693A21D213B7100B29B08 /* ReceiptRefreshRequest.swift in Sources */,
+				D7B9EBA01DE2D82F00E679FA /* Request.swift in Sources */,
 				D7376DFC1D2509EB00805DAE /* Notifications.swift in Sources */,
 				D79693A01D213A3A00B29B08 /* ReceiptManager.swift in Sources */,
+				D7B9EBA61DE2D82F00E679FA /* SessionDelegate.swift in Sources */,
 				D79693901D21178200B29B08 /* FunPlusAppleIAP.swift in Sources */,
+				D7B9EB9F1DE2D82F00E679FA /* ParameterEncoding.swift in Sources */,
 				D796939E1D21382100B29B08 /* TransactionRestoreRequest.swift in Sources */,
+				D7B9EB991DE2D82F00E679FA /* AFError.swift in Sources */,
+				D7B9EB9A1DE2D82F00E679FA /* Alamofire.swift in Sources */,
+				D7B9EBA51DE2D82F00E679FA /* ServerTrustPolicy.swift in Sources */,
+				D7B9EBA71DE2D82F00E679FA /* TaskDelegate.swift in Sources */,
 				D796939A1D211E3B00B29B08 /* PaymentQueueProxy.swift in Sources */,
+				D7B9EBA41DE2D82F00E679FA /* Result.swift in Sources */,
+				D7B9EBA11DE2D82F00E679FA /* RequestSessionManager.swift in Sources */,
 				D796939C1D211E4D00B29B08 /* ProductPurchaseRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,7 +460,7 @@
 				);
 				INFOPLIST_FILE = FunPlusAppleIAP/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.funplus.sdk.FunPlusAppleIAP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,7 +485,7 @@
 				);
 				INFOPLIST_FILE = FunPlusAppleIAP/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.funplus.sdk.FunPlusAppleIAP;
 				PRODUCT_NAME = "$(TARGET_NAME)";

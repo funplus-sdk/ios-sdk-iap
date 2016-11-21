@@ -7,7 +7,6 @@
 //
 
 import Foundation
-//import FunPlusSDK
 
 public typealias Receipt = [String: AnyObject]
 
@@ -153,27 +152,26 @@ open class ReceiptManager {
             return
         }
         
-        // TODO
-//        Alamofire.request(storeRequest as! URLRequestConvertible).responseJSON { response in
-//            switch response.result {
-//            case .success(let value):
-//                guard let receiptInfo = value as? Receipt, let statusCode = receiptInfo["status"] as? Int else {
-//                    completion(.failed(error: .responseError))
-//                    return
-//                }
-//                
-//                let receiptStatus = ReceiptStatus(rawValue: statusCode) ?? ReceiptStatus.unknown
-//                
-//                guard receiptStatus.isValid else {
-//                    completion(.failed(error: .invalidReceipt(receipt: receiptInfo, status: receiptStatus)))
-//                    return
-//                }
-//                
-//                completion(.success(receipt: receiptInfo))
-//            case .failure(_):
-//                completion(.failed(error: .responseError))
-//            }
-//        }
+        RequestSessionManager.default.request(storeRequest as! URLRequestConvertible).responseJSON { response in
+            switch response.result {
+            case .success(let value):
+                guard let receiptInfo = value as? Receipt, let statusCode = receiptInfo["status"] as? Int else {
+                    completion(.failed(error: .responseError))
+                    return
+                }
+                
+                let receiptStatus = ReceiptStatus(rawValue: statusCode) ?? ReceiptStatus.unknown
+                
+                guard receiptStatus.isValid else {
+                    completion(.failed(error: .invalidReceipt(receipt: receiptInfo, status: receiptStatus)))
+                    return
+                }
+                
+                completion(.success(receipt: receiptInfo))
+            case .failure(_):
+                completion(.failed(error: .responseError))
+            }
+        }
     }
     
     class func verifyPurchase(
