@@ -14,8 +14,8 @@ public typealias Receipt = [String: AnyObject]
     URL used to verify remotely receipt
  */
 public enum ReceiptVerifyURL: String {
-    case ProductionURL = "https://buy.itunes.apple.com/verifyReceipt"
-    case SandboxURL = "https://sandbox.itunes.apple.com/verifyReceipt"
+    case productionURL = "https://buy.itunes.apple.com/verifyReceipt"
+    case sandboxURL = "https://sandbox.itunes.apple.com/verifyReceipt"
 }
 
 /**
@@ -121,7 +121,7 @@ open class ReceiptManager {
         See [Validate Receipt](https://developer.apple.com/library/ios/releasenotes/General/ValidateAppStoreReceipt/Chapters/ValidateRemotely.html)
      */
     class func verify(
-        recepitVerifyURL url: ReceiptVerifyURL = .ProductionURL,
+        recepitVerifyURL url: ReceiptVerifyURL = .productionURL,
         password autoRenewPassword: String? = nil,
         completion: @escaping (ReceiptVerifyResult) -> Void)
     {

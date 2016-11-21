@@ -18,6 +18,8 @@ import StoreKit
  */
 public class FunPlusAppleIAP {
     
+    public static let VERSION = "4.0.0-alpha.0"
+    
     // MARK: - Query Products
     
     /**
@@ -99,7 +101,7 @@ public class FunPlusAppleIAP {
     // MARK: - Verify Receipt
     
     public class func verifyReceipt(
-        receiptVerifyURL url: ReceiptVerifyURL = .ProductionURL,
+        receiptVerifyURL url: ReceiptVerifyURL = .productionURL,
         password: String? = nil,
         completion: @escaping (ReceiptVerifyResult) -> Void)
     {
